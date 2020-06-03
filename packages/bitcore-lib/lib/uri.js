@@ -110,8 +110,8 @@ URI.isValid = function(arg, knownParams) {
 URI.parse = function(uri) {
   var info = URL.parse(uri, true);
 
-  if (info.protocol !== 'verge:') {
-    throw new TypeError('Invalid verge URI');
+  if (info.protocol !== 'audax:') {
+    throw new TypeError('Invalid audax URI');
   }
 
   // workaround to host insensitiveness
@@ -135,7 +135,7 @@ URI.prototype._fromObject = function(obj) {
   /* jshint maxcomplexity: 10 */
 
   if (!Address.isValid(obj.address)) {
-    throw new TypeError('Invalid verge address');
+    throw new TypeError('Invalid audax address');
   }
 
   this.address = new Address(obj.address);
@@ -205,7 +205,7 @@ URI.prototype.toString = function() {
   _.extend(query, this.extras);
 
   return URL.format({
-    protocol: 'verge:',
+    protocol: 'audax:',
     host: this.address,
     query: query
   });

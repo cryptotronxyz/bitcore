@@ -137,21 +137,16 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x1e,
-  privatekey: 0x9e,
-  scripthash: 0x21,
-  xpubkey: 0x022d2533,
-  xprivkey: 0x0221312b,
-  networkMagic: 0xf7a77eff,
-  port: 21102,
+  pubkeyhash: 0x17,
+  privatekey: 0x8E,
+  scripthash: 0x08,
+  bech32prefix: 'bo',
+  xpubkey: 0x022D2533,
+  xprivkey: 0x0221312B,
+  networkMagic: 0xd4e6c592,
+  port: 18200,
   dnsSeeds: [
-    '159.89.202.56',
-    '138.197.68.130',
-    '165.227.31.52',
-    '159.89.202.56',
-    '188.40.78.31',
-    '176.9.143.143',
-    '198.27.82.41'
+    '149.28.8.136'
   ]
 });
 
