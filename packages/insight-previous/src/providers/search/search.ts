@@ -74,9 +74,9 @@ export class SearchProvider {
     const network = this.config.network;
     const addr = this.extractAddress(inputValue);
 
-    if (coin.toLowerCase() === 'xvg' && network === 'mainnet') {
+    if (coin.toLowerCase() === 'audax' && network === 'mainnet') {
       return this.isValidBitcoinMainnetAddress(addr);
-    } else if (coin.toLowerCase() === 'xvg' && network === 'testnet') {
+    } else if (coin.toLowerCase() === 'audax' && network === 'testnet') {
       return this.isValidBitcoinTestnetAddress(addr);
     } else if (coin.toLowerCase() === 'bch' && network === 'mainnet') {
       return (

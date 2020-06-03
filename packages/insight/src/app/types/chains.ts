@@ -1,5 +1,5 @@
-export type Protocol = 'BTC' | 'XVG';
-export type Code = 'BTC' | 'XVG' | 'tBTC' | 'tXVG';
+export type Protocol = 'BTC' | 'AUDAX';
+export type Code = 'BTC' | 'AUDAX' | 'tBTC' | 'taudax';
 export type Network = 'mainnet' | 'testnet' | 'regtest';
 
 export interface Chain {
@@ -9,18 +9,18 @@ export interface Chain {
   protocol: Protocol;
 }
 
-export const XVG: Chain = {
-  code: 'XVG',
+export const AUDAX: Chain = {
+  code: 'AUDAX',
   name: 'Bitcoin Cash',
   network: 'mainnet',
-  protocol: 'XVG'
+  protocol: 'AUDAX'
 };
 
-export const tXVG: Chain = {
-  code: 'tXVG',
+export const taudax: Chain = {
+  code: 'taudax',
   name: 'Bitcoin Cash Testnet',
   network: 'testnet',
-  protocol: 'XVG'
+  protocol: 'AUDAX'
 };
 
 export const BTC: Chain = {
@@ -38,8 +38,8 @@ export const tBTC: Chain = {
 };
 
 export const Chains = {
-  XVG,
-  tXVG,
+  AUDAX,
+  tAUDAX,
   BTC,
   tBTC
 };

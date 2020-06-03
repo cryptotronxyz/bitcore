@@ -23,7 +23,7 @@ export class BlockListComponent implements OnInit {
   @Input()
   query$: Observable<StreamingFindOptions<IBlock>>;
   @Input()
-  displayValueCode = 'XVG';
+  displayValueCode = 'AUDAX';
   blocks$: Observable<IBlock>;
 
   constructor(private apiService: ApiService) {}

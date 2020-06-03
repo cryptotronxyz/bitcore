@@ -31,7 +31,7 @@ var config = {
     },
   },
   blockchainExplorerOpts: {
-    xvg: {
+    audax: {
       livenet: {
         provider: 'v8',
         url: process.env.BWS_NODE_URL || 'http://localhost:3000'

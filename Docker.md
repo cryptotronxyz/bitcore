@@ -3,11 +3,11 @@ Currently this repo's docker file only supports Bitcore Node & Bitcore Wallet Se
 
 ## Setup Guide
 
-### 1. Setup Verge Node
-Either setup a Verge node using a docker container or a local node using verged or a QT client. Just make sure it's accessible via port 21102 on the localhost.
+### 1. Setup Audax Node
+Either setup an Audax node using a docker container or a local node using audaxd or a QT client. Just make sure it's accessible via port 18200 on the localhost.
 
 <details>
-<summary><b> Example Verge Mainnet Config </b></summary>
+<summary><b> Example Audax Mainnet Config </b></summary>
 
 ```sh
 listen=1
@@ -19,13 +19,13 @@ rpcpassword=RPCPASS
 
 </details>
 
-### 2. Run Verge node
+### 2. Run Audax node
 <details>
-<summary><b>Example Starting a Verge Node</b></summary>
+<summary><b>Example Starting an Audax Node</b></summary>
   
 ```
-# Path to your verge application and path to the config above
-/Applications/Verge-Qt.app/Contents/MacOS/Verge-Qt -datadir=/Users/username/blockchains/verge-core/networks/mainnet/
+# Path to your audax application and path to the config above
+/Applications/Audax-Qt.app/Contents/MacOS/Audax-Qt -datadir=/Users/username/blockchains/audax-core/networks/mainnet/
 ```
 
 </details>

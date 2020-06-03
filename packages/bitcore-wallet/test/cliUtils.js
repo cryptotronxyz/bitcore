@@ -69,14 +69,14 @@ describe('CliUtils', function() {
         '1.23 bit': 123,
         '0 bit': 0,
         '.45bit': 45,
-        '1xvg': 1000000,
-        '  1xvg': 1000000,
-        '9999xvg': 9999000000,
-        '0.000001xvg': 1,
-        '00000.000001xvg': 1,
-        '0.000001 XVG': 1,
-        '0.123xvg': 123000,
-        '0.123   xVg': 123000,
+        '1audax': 1000000,
+        '  1audax': 1000000,
+        '9999audax': 9999000000,
+        '0.000001audax': 1,
+        '00000.000001audax': 1,
+        '0.000001 AUDAX': 1,
+        '0.123audax': 123000,
+        '0.123   audax': 123000,
       };
       _.each(texts, function(satoshi, text) {
         var amount = CliUtils.parseAmount(text);
@@ -87,18 +87,18 @@ describe('CliUtils', function() {
       var texts = [
         '',
         '  ',
-        'xvg',
+        'audax',
         '1satoshi',
         'no-number',
         '-3',
         '1 b t c',
-        'xvg1',
-        'xvg 1',
+        'audax1',
+        'audax 1',
         '1,234',
-        '0.000000001xvg',
+        '0.000000001audax',
         '0.1sat',
         '0.123bit',
-        '2.000000009xvg',
+        '2.000000009audax',
       ];
       _.each(texts, function(text) {
         var valid = true;

@@ -16,7 +16,7 @@ var Stringify = require('json-stable-stringify');
 
 var Bitcore = require('bitcore-lib');
 var Bitcore_ = {
-  xvg: Bitcore,
+  audax: Bitcore,
   bch: require('bitcore-lib-cash')
 };
 const Stealth = require('bitcore-stealth');

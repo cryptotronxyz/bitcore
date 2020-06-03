@@ -25,7 +25,7 @@ Defaults.MAX_MAIN_ADDRESS_GAP = 20;
 Defaults.SCAN_ADDRESS_GAP = Defaults.MAX_MAIN_ADDRESS_GAP + 10;
 
 Defaults.FEE_LEVELS = {
-  xvg: [{
+  audax: [{
     name: 'urgent',
     nbBlocks: 2,
     multiplier: 1.5,

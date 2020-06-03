@@ -12,7 +12,7 @@ var Client;
 var BCHAddressTranslator = require('../bchaddresstranslator');
 var Bitcore = require('bitcore-lib');
 var Bitcore_ = {
-  xvg: Bitcore,
+  audax: Bitcore,
   bch: require('bitcore-lib-cash')
 };
 const config = require('../../config');
@@ -25,7 +25,7 @@ function v8network(bwsNetwork) {
   if (bwsNetwork == 'livenet') return 'mainnet';
   if (
     bwsNetwork == 'testnet' &&
-    config.blockchainExplorerOpts.xvg.testnet.regtestEnabled
+    config.blockchainExplorerOpts.audax.testnet.regtestEnabled
   ) {
     return 'regtest';
   }

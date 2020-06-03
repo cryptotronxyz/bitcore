@@ -1,5 +1,5 @@
 import { LoggerConfig, NgxLoggerLevel } from 'ngx-logger';
-import { XVG, BTC, Chain, tXVG, tBTC } from '../app/types/chains';
+import { AUDAX, BTC, Chain, tAUDAX, tBTC } from '../app/types/chains';
 
 const loggingSettings: LoggerConfig = {
   serverLoggingUrl: '/api/logs/insight',
@@ -7,13 +7,13 @@ const loggingSettings: LoggerConfig = {
   serverLogLevel: NgxLoggerLevel.ERROR
 };
 
-const initialChain: Chain = XVG;
+const initialChain: Chain = AUDAX;
 
-const expectedChains: Chain[] = [XVG, tXVG, BTC, tBTC];
+const expectedChains: Chain[] = [AUDAX, tAUDAX, BTC, tBTC];
 
 export const environment = {
   apiPrefix: 'https://api.bitcore.io/api',
-  ratesApi: 'https://bitpay.com/api/rates/XVG',
+  ratesApi: 'https://bitpay.com/api/rates/AUDAX',
   production: true,
   debugRouting: false,
   loggingSettings,

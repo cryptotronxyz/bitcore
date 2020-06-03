@@ -12,7 +12,7 @@ var Copayer = require('./copayer');
 var StealthAddress = require('./stealthaddress');
 var AddressManager = require('./addressmanager');
 var Bitcore = {
-  'xvg': require('bitcore-lib'),
+  'audax': require('bitcore-lib'),
   'bch': require('bitcore-lib-cash'),
 };
 

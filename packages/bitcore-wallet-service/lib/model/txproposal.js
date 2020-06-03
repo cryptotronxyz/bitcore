@@ -8,7 +8,7 @@ log.debug = log.verbose;
 log.disableColor();
 
 var Bitcore = {
-  'xvg': require('bitcore-lib'),
+  'audax': require('bitcore-lib'),
   'bch': require('bitcore-lib-cash'),
 };
 

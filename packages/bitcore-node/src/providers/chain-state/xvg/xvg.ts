@@ -1,7 +1,7 @@
 import { BTCStateProvider } from '../btc/btc';
 
-export class XVGStateProvider extends BTCStateProvider {
-  constructor(chain: string = 'XVG') {
+export class AUDAXStateProvider extends BTCStateProvider {
+  constructor(chain: string = 'AUDAX') {
     super(chain);
   }
 }

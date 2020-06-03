@@ -4,7 +4,7 @@ var $ = require('preconditions').singleton();
 var _ = require('lodash');
 
 var Bitcore = {
-  'xvg': require('bitcore-lib'),
+  'audax': require('bitcore-lib'),
   'bch': require('bitcore-lib-cash'),
 };
 var Common = require('../common');

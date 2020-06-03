@@ -23,7 +23,7 @@ services:
     restart: always
     command: npm run node
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/api/XVG/mainnet/block/tip"]
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/AUDAX/mainnet/block/tip"]
       interval: 1m
       timeout: 10s
       retries: 2

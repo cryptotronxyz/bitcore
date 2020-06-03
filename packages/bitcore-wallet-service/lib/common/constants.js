@@ -5,7 +5,7 @@ var Constants = {};
 Constants.COINS = {
   BTC: 'btc',
   BCH: 'bch',
-  XVG: 'xvg',
+  AUDAX: 'audax',
 };
 
 Constants.NETWORKS = {

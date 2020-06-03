@@ -2,7 +2,7 @@ import { BTCStateProvider } from './btc/btc';
 import { BCHStateProvider } from './bch/bch';
 import { ETHStateProvider } from './eth/eth';
 import { BATStateProvider } from './erc20/tokens/bat';
-import { XVGStateProvider } from "./xvg/xvg";
+import { AUDAXStateProvider } from "./audax/audax";
 import { CSP } from '../../types/namespaces/ChainStateProvider';
 import { Chain } from '../../types/ChainNetwork';
 
@@ -11,7 +11,7 @@ const services: CSP.ChainStateServices = {
   BCH: new BCHStateProvider(),
   ETH: new ETHStateProvider(),
   BAT: new BATStateProvider(),
-  XVG: new XVGStateProvider()
+  AUDAX: new AUDAXStateProvider()
 };
 
 class ChainStateProxy implements CSP.ChainStateProvider {

@@ -17,18 +17,18 @@
       }
     },
     "chains": {
-      "XVG": {
+      "AUDAX": {
         "mainnet": {
           "chainSource": "p2p",
           "trustedPeers": [
             {
               "host": "host.docker.internal",
-              "port": 21102
+              "port": 18200
             }
           ],
           "rpc": {
             "host": "host.docker.internal",
-            "port": 20102,
+            "port": 18201,
             "username": "test",
             "password": "test"
           }

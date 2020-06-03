@@ -93,7 +93,7 @@ Utils.getClient = function(args, opts, cb) {
   opts = opts || {};
 
   var filename = args.file || process.env['WALLET_FILE'] || process.env['HOME'] + '/.wallet.dat';
-  var host = args.host || process.env['VWS_HOST'] || 'https://vws.vergecurrency.network/';
+  var host = args.host || process.env['VWS_HOST'] || 'https://vws.theaudaxproject.io/';
 
   var storage = new FileStorage({
     filename: filename,
@@ -222,7 +222,7 @@ Utils.findOneTxProposal = function(txps, id) {
 };
 
 Utils.UNITS2 = {
-  'xvg': 1000000,
+  'audax': 1000000,
   'bit': 100,
   'sat': 1,
 };
@@ -272,8 +272,8 @@ Utils.COIN = {
     maxDecimals: 8,
     minDecimals: 8,
   },
-  xvg: {
-    name: 'xvg',
+  audax: {
+    name: 'audax',
     toSatoshis: 1000000,
     maxDecimals: 6,
     minDecimals: 6,
@@ -317,8 +317,8 @@ Utils.renderAmount = function(satoshis, coin, opts) {
 
   opts = opts || {};
 
-  var coin = coin || 'xvg';
-  var u = Utils.COIN[coin] || Utils.COIN.xvg;
+  var coin = coin || 'audax';
+  var u = Utils.COIN[coin] || Utils.COIN.audax;
   var amount = clipDecimals((satoshis / u.toSatoshis), u.maxDecimals).toFixed(u.maxDecimals);
   return addSeparators(amount, opts.thousandsSeparator || ',', opts.decimalSeparator || '.', u.minDecimals) + ' ' + u.name;
 };

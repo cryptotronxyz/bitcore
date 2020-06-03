@@ -4,7 +4,7 @@ var program = require('commander');
 var utils = require('./cli-utils');
 program = utils.configureCommander(program);
 program
-  .option('-c, --coin <coin>', 'coin (xvg/bch)')
+  .option('-c, --coin <coin>', 'coin (audax/bch)')
   .parse(process.argv);
 
 
