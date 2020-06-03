@@ -1,6 +1,6 @@
 # Bitcore
 
-**Infrastructure to build Verge and blockchain-based applications for the next generation of financial technology.**
+**Infrastructure to build Audax and blockchain-based applications for the next generation of financial technology.**
 
 ## Getting Started
 
@@ -12,7 +12,7 @@
 ### Checkout the repo
 
 ```sh
-git clone git@github.com:vergecurrency/bitcore.git
+git clone git@github.com:theaudaxproject/bitcore.git
 cd bitcore
 git checkout master
 npm install
@@ -30,18 +30,18 @@ npm install
 {
   "bitcoreNode": {
     "chains": {
-      "XVG": {
+      "AUDAX": {
         "mainnet": {
           "chainSource": "p2p",
           "trustedPeers": [
             {
               "host": "127.0.0.1",
-              "port": 21102
+              "port": 18200
             }
           ],
           "rpc": {
             "host": "127.0.0.1",
-            "port": 20102,
+            "port": 18201,
             "username": "RPCUSER",
             "password": "RPCPASS"
           }
@@ -54,10 +54,10 @@ npm install
 
 </details>
 
-### 2. Setup Verge Node
+### 2. Setup Audax Node
 
 <details>
-<summary><b> Example Verge Mainnet Config </b></summary>
+<summary><b> Example Audax Mainnet Config </b></summary>
 
 ```sh
 txindex=0
@@ -65,13 +65,12 @@ listen=1
 server=1
 
 # Make sure port & rpcport matches the 
-# bitcore.config.json ports for XVG mainnet
+# bitcore.config.json ports for AUDAX mainnet
 
-# if using Verge Core v5+ prefix
 # [main]
 
-port=21102
-rpcport=20102
+port=18200
+rpcport=18201
 
 rpcuser=RPCUSER
 rpcpassword=RPCPASS
@@ -79,13 +78,13 @@ rpcpassword=RPCPASS
 
 </details>
 
-### 3. Run Verge node
+### 3. Run Audax node
 <details>
-<summary><b>Example Starting a Verge Node</b></summary>
+<summary><b>Example Starting a Audax Node</b></summary>
   
 ```
-# Path to your verge application and path to the config above
-/Applications/Verge-Qt.app/Contents/MacOS/Verge-Qt -datadir=/Users/username/blockchains/verge-core/networks/mainnet/
+# Path to your Audax application and path to the config above
+/Applications/Audax-Qt.app/Contents/MacOS/Audax-Qt -datadir=/Users/username/blockchains/audax-core/networks/mainnet/
 ```
 
 </details>
@@ -97,7 +96,7 @@ npm run bootstrap  (if you are using ubuntu 18.04 you will need to do this)
 npm run node
 ```
 
-If you'd like to use Docker go to [the docker manual](https://github.com/vergecurrency/bitcore/blob/master/Docker.md).
+If you'd like to use Docker go to [the docker manual](https://github.com/theaudaxproject/bitcore/blob/master/Docker.md).
 
 ## Applications
 
@@ -127,10 +126,10 @@ If you'd like to use Docker go to [the docker manual](https://github.com/vergecu
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/vergecurrency/bitcore/blob/master/Contributing.md) on the main bitcore repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/theaudaxproject/bitcore/blob/master/Contributing.md) on the main bitcore repo for information about how to contribute.
 
 ## License
 
-Code released under [the MIT license](https://github.com/vergecurrency/bitcore/blob/master/LICENSE).
+Code released under [the MIT license](https://github.com/theaudaxproject/bitcore/blob/master/LICENSE).
 
 Copyright 2013-2019 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
